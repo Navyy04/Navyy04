@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <script>
+                let students = ['Ali','Rehan','Hamza'];
+                console.log('before adding: ', students);
+
+                students.push('Naveed');
+                students.push('Faiza');
+                
+                console.log('after adding: ', students);
+
+                students.splice(3, 0, 'Iqra');
+                console.log('after splicing: ', students);
+
+                let removedstd = students.pop();
+                console.log('removed student: ', removedstd);
+
+                console.log('after removing', students);
+
+                students.splice(2,1);
+                console.log('after removing middle', students);
+
+                students.shift();
+                console.log('after shift: ', students);
+
+                delete students[0];
+                console.log('after deleting: ', students);
+                
+        </script>
+    </head>
+</html>

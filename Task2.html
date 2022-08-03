@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <script>
+            listA = [];
+            console.log(listA);
+
+            listA =['Milk', 'Bread', 'Apples']
+            console.log('list', listA);
+
+            console.log('Before Update:', listA);
+            listA[1]='Bananas';
+            console.log('After Updtae:', listA);
+
+            listA.splice(2, 0, 'Eggs');
+            console.log('After Update:', listA);
+
+            let removeditm = listA.pop();
+            console.log('removed item: ', removeditm);
+            console.log('after removing', listA);      
+
+            const searchResult = listA.findIndex(function (listAs){
+            return listAs[0] === 'Milk';
+            });
+            console.log('searchResult', searchResult);
+            console.log('Before Adding: ', listA);
+
+            listA.push('Carrot','Lettuce');
+            console.log('After Adding:', listA);
+
+            listB=['Pop', 'Juice'];
+            console.log('List1', listB);
+            console.log('Sorted ListB', listB.sort());
+            
+
+            listA=['Milk', 'Bananas', 'Eggs', 'Carrot', 'Lettuce'];
+            console.log('Sorted list', listA.sort());
+
+            console.log('Adding ListB Twice at the end');
+            const list = ["Bananas", "Carrot", "Eggs", "Lettuce", "Milk"];
+            const list1 = ["Juice", "Pop"];
+            const merged = list.concat(list1).concat(list1);
+            console.log(merged);
+
+            const searchResult1 = listB.findIndex(function (listBs){
+            return listBs[8] === 'Pop';
+            });
+            console.log('searchResult1', searchResult1);
+        </script>
+    </head>
+</html>
