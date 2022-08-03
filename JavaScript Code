@@ -1,0 +1,11 @@
+<html>
+    <head>
+        <script>
+            let list = ['Milk','Bread','Apples'];
+            console.log('list', list);
+            console.log('list', list.length);
+            list[1]= 'Bananas';
+            console.log('list', list);
+        </script>
+    </head>
+</html>
